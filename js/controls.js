@@ -33,8 +33,9 @@ export default function Controls({
             return 0
         }
 
-        if(newMinutes > 999){
+        if(newMinutes > 500){
             alert("Você adicionou um valor inválido")
+            newMinutes = prompt(`Digite os minutos novamente (máx até 500 minutos)`)
             return 0
         }
 
